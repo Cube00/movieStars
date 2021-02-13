@@ -1,0 +1,227 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 990px;
+    top: -150px;
+}
+
+.slider-ul {
+    width: 100%;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.item {
+    display: inline-block;
+    margin-right: -4px;
+    width: 330px;
+    padding: 10px;
+    background: none;
+    border-radius: 10px;
+    transition: 0.9s;
+}
+
+.inf-itm {
+    background: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.img-inf-itm {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 6px 4px -4px rgb(112, 112, 112);
+    -moz-box-shadow: 0 6px 4px -4px rgb(112, 112, 112);
+    box-shadow: 0 6px 4px -4px rgb(112, 112, 112);
+}
+
+.img-inf-itm h2 {
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    color: #fff;
+    font-family: "Cabin-Bold";
+    font-size: 15pt;
+}
+
+.img-inf-itm img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    min-height: 190px;
+}
+
+.slider-header {
+    position: relative;
+    top: -95px;
+}
+
+.slider-content {
+    display: none;
+}
+
+.sl-im {
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+}
+
+.im-cth {
+    object-fit: cover;
+    width: 100%;
+    height: 570px;
+    overflow: hidden;
+}
+
+.shadow-effect-sl-img {
+    position: absolute;
+    width: 100%;
+    height: 570px;
+    top: 0;
+    background-image: linear-gradient(to right, #1d3557, #1d3557, #000, #000);
+    opacity: 0.7;
+}
+
+.sl-in-ds-fl {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+
+.sl-in-f {
+    position: absolute;
+    top: -410px;
+    left: 48px;
+}
+
+.sl-in-f h2 {
+    font-size: 42px;
+    font-family: "Cabin-Bold";
+    color: #fff;
+    margin-bottom: 15px;
+    animation: imgup 0.5s;
+}
+
+.cats span {
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    font-family: "Cabin-Bold";
+    color: #fff;
+}
+
+.sl-in-f article {
+    width: 350px;
+    font-size: 14px;
+    font-family: "Cabin-Regular";
+    color: #c6c6c6;
+    animation: textup 0.5s;
+}
+
+.btn-rate-sl {
+    margin: 29px 0;
+    padding: 8px 15px;
+    background-color: #e63946;
+    font-size: 11pt;
+    font-family: "Cabin-Regular";
+    color: #171717;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: textup 0.5s;
+}
+
+.rating-stars {
+    overflow: hidden;
+    position: absolute;
+    left: 102px;
+    top: 109px;
+    animation: textup 0.5s;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: "★ ";
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.star-rat {
+    float: left;
+    background-image: url("../images/star.svg");
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@keyframes imgup {
+    0% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: rotate(80deg);
+    }
+    10% {
+        transform: rotate(60deg);
+    }
+    90% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: rotate(0);
+    }
+}
+
+@keyframes textup {
+    0% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(10px);
+    }
+    10% {
+        transform: translateX(100px);
+    }
+    90% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(0px);
+    }
+}

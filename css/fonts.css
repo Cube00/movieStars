@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Cabin-Regular";
+    src: url("../fonts/Cabin-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/Cabin-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Cabin-Regular.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/Cabin-Regular.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/Cabin-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Cabin-Regular.svg#Cabin-Regular") format("svg");
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Cabin-Bold";
+    src: url("../fonts/Cabin-Bold.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/Cabin-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Cabin-Bold.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/Cabin-Bold.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/Cabin-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Cabin-Bold.svg#Cabin-Bold") format("svg");
+    /* Legacy iOS */
+}
