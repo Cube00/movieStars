@@ -200,7 +200,7 @@ nav ul li a {
 /*wraper-content*/
 
 .wraper-content {
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 
 .wall-0 {
@@ -214,7 +214,7 @@ nav ul li a {
 /*featured-today*/
 
 .featured-today {
-    bottom: 50px;
+    margin-bottom: 95px;
 }
 
 .title-section-featured {
@@ -342,4 +342,117 @@ nav ul li a {
     font-size: 14px;
     font-family: "Cabin-Bold";
     color: #afafaf;
+}
+
+
+/*top pics*/
+
+.top-pics {
+    overflow: hidden;
+}
+
+.title-section-top-pics {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.owl-s {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.sl-changer {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.title-section-top-pics h2 {
+    margin-bottom: 2px;
+    font-size: 32px;
+    font-family: "Cabin-Bold";
+    color: #1d3557;
+}
+
+.title-section-top-pics span {
+    font-family: "Cabin-Regular";
+    font-size: 20px;
+    color: rgb(194, 194, 194);
+}
+
+.sl-cr-owl {
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.news-owl {
+    position: relative;
+    display: inline-block;
+    width: 282px;
+    margin-right: 20px;
+}
+
+.news-owl:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.img-owl-cr {
+    position: relative;
+    width: 282px;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-owl-cr img {
+    position: relative;
+    max-width: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-owl-cr:after {
+    content: "";
+    position: absolute;
+    width: 282px;
+    height: 420px;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.inf-cr-owl {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    z-index: 1;
+}
+
+.rating-owl {
+    position: absolute;
+    bottom: 48px;
+    padding: 7px 12px;
+    background-color: #fff;
+    font-family: "Cabin-Regular";
+    font-size: 11pt;
+    color: #000;
+    border-radius: 30px;
+}
+
+.inf-cr-owl h2 {
+    font-family: "Cabin-Bold";
+    font-size: 13pt;
+    color: #fff;
+}
+
+.cat-owl {
+    margin-top: 5px;
+}
+
+.cat-owl span {
+    margin-right: 7px;
+    font-size: 14px;
+    font-family: "Cabin-Bold";
+    color: #c2c2c2;
 }
