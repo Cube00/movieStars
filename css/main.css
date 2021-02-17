@@ -339,11 +339,208 @@ nav ul li a {
     color: rgb(194, 194, 194);
 }
 
+
+/*featured news*/
+
 .sec-ft-nw {
     position: relative;
     display: inline-block;
     width: 224px;
     margin-right: 15px;
+    cursor: pointer;
+}
+
+.sec-ft-nw:hover .img-sec-ft {
+    z-index: 2;
+}
+
+.sec-ft-nw .information-hovered {
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    overflow: hidden;
+    height: 350px;
+    width: 0px;
+    color: #fff;
+    border-radius: 30px;
+    z-index: 0;
+    opacity: 0;
+}
+
+.sec-ft-nw .lefter {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 300px;
+    height: 100%;
+}
+
+.sec-ft-nw:hover .information-hovered {
+    position: absolute;
+    background-color: #fff;
+    height: 350px;
+    width: 700px;
+    opacity: 1;
+    z-index: 1;
+    transition-duration: 0.4s;
+    transition-delay: 0.1s;
+}
+
+.lefter h2 {
+    color: #fff !important;
+}
+
+.sec-ft-nw:hover .lefter h2 {
+    font-size: 26px;
+    font-family: "Cabin-Bold";
+    color: #000 !important;
+}
+
+.sec-ft-nw:hover .lefter h3 {
+    font-size: 14px;
+    font-family: "Cabin-Bold";
+    color: #727272;
+    margin-right: 10px;
+}
+
+.sec-ft-nw:hover .lefter span {
+    font-size: 14px;
+    font-family: "Cabin-Bold";
+    color: #c2c2c2;
+    margin-right: 10px;
+}
+
+.sec-ft-nw:hover .lefter article {
+    margin-top: 20px;
+    color: rgb(112, 112, 112);
+    font-family: "Cabin-Regular";
+    font-size: 16px;
+}
+
+.sec-ft-nw:hover .seemore {
+    position: absolute;
+    padding: 15px 20px;
+    bottom: 100px;
+    right: 20px;
+    color: #000;
+    background-color: #f1f1f1;
+    font-family: "Cabin-Bold";
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sec-ft-nw:hover .seemore:hover {
+    background-color: #e63946;
+    color: #fff;
+}
+
+
+/*nth 4 child*/
+
+.sec-ft-nw:nth-child(5) .information-hovered {
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    left: auto;
+    overflow: hidden;
+    height: 350px;
+    width: 0px;
+    color: #fff;
+    border-radius: 30px;
+    z-index: 0;
+    opacity: 0;
+}
+
+.sec-ft-nw:nth-child(5):hover .information-hovered {
+    position: absolute;
+    background-color: #fff;
+    height: 350px;
+    width: 700px;
+    opacity: 1;
+    z-index: 1;
+    transition-duration: 0.4s;
+    transition-delay: 0.1s;
+}
+
+.sec-ft-nw:nth-child(5) .lefter {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 300px;
+    height: 100%;
+}
+
+.sec-ft-nw:nth-child(5):hover .seemore {
+    position: absolute;
+    padding: 15px 20px;
+    bottom: 100px;
+    right: auto;
+    color: #000;
+    background-color: #f1f1f1;
+    font-family: "Cabin-Bold";
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sec-ft-nw:nth-child(5):hover .seemore:hover {
+    background-color: #e63946;
+    color: #fff;
+}
+
+
+/*lastchild*/
+
+.sec-ft-nw:last-child .information-hovered {
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    left: auto;
+    overflow: hidden;
+    height: 350px;
+    width: 0px;
+    color: #fff;
+    border-radius: 30px;
+    z-index: 0;
+    opacity: 0;
+}
+
+.sec-ft-nw:last-child:hover .information-hovered {
+    position: absolute;
+    background-color: #fff;
+    height: 350px;
+    width: 700px;
+    opacity: 1;
+    z-index: 1;
+    transition-duration: 0.4s;
+    transition-delay: 0.1s;
+}
+
+.sec-ft-nw:last-child .lefter {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 300px;
+    height: 100%;
+}
+
+.sec-ft-nw:last-child:hover .seemore {
+    position: absolute;
+    padding: 15px 20px;
+    bottom: 100px;
+    right: auto;
+    color: #000;
+    background-color: #f1f1f1;
+    font-family: "Cabin-Bold";
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sec-ft-nw:last-child:hover .seemore:hover {
+    background-color: #e63946;
+    color: #fff;
+}
+
+.sec-ft-nw:hover .rat-sec-ft {
+    z-index: 2;
 }
 
 .sec-ft-nw:last-child {
