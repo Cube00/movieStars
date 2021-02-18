@@ -1,0 +1,144 @@
+@media screen and (max-width: 991px) {
+    .slider-header {
+        top: -105px;
+        margin-bottom: -80px;
+    }
+    .sl-in-f article {
+        display: none;
+    }
+    .slider {
+        width: 470px;
+        top: -120px;
+    }
+    .sl-in-f h2 {
+        font-size: 11px;
+    }
+    .cover-fr-nw-it {
+        height: 200px;
+    }
+    .poster-fr-nw {
+        top: 90px;
+        width: 120px;
+        height: 170px;
+    }
+    .inf-fr-nw {
+        margin-left: 150px;
+    }
+    .inf-fr-nw h2 {
+        top: -60px;
+        font-size: 12px;
+    }
+    .inf-fr-nw article {
+        font-size: 10px;
+    }
+    .ps-tp-it {
+        width: 130px;
+        height: 80px;
+    }
+    .logo img {
+        width: 70px;
+    }
+    .ps-tp-it img {
+        min-width: 100px;
+        width: 130px;
+        height: 80px;
+    }
+    .inf-sc-tp-i h2 {
+        font-size: 11px;
+    }
+    .inf-sc-tp-i span {
+        font-size: 10px;
+    }
+    .date-sc-tp-i {
+        margin-top: 2px;
+        margin-right: 5px;
+        width: 14px;
+    }
+    .inf-sc-tp-i {
+        margin-top: 10px;
+    }
+    .second-type-item {
+        margin-bottom: 18px;
+    }
+    .sec-ft-nw {
+        width: 153px;
+    }
+    .sec-ft-nw h2 {
+        font-size: 12px;
+    }
+    .sec-ft-sp span {
+        font-size: 10px;
+    }
+    .sec-ft-nw {
+        margin-bottom: 19px;
+    }
+    .sec-ft-nw h2 {
+        margin-bottom: 0px;
+    }
+    .img-sec-ft {
+        height: 190px;
+    }
+    .rat-sec-ft {
+        top: 160px;
+    }
+    .img-owl-cr {
+        width: 100%;
+        height: 250px;
+    }
+    .img-main-event {
+        height: 300px;
+    }
+    .pr-item-img {
+        height: 180px;
+    }
+    .ft-it {
+        bottom: 8px;
+        margin-left: 0px;
+    }
+    .rat-pr-item {
+        font-size: 9px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .pr-item h2 {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .pr-item-cats {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .pr-item-cats span {
+        font-size: 10px;
+    }
+    .wall-0 {
+        padding-bottom: 20px;
+    }
+    .sign-in {
+        font-size: 8px;
+    }
+    .sign-up {
+        font-size: 8px;
+    }
+    .login {
+        margin-top: 12px;
+    }
+    .title-section-featured h2 {
+        font-size: 17px;
+    }
+    .title-section-featured span {
+        font-size: 14px;
+    }
+    .wall-0 {
+        padding-top: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+}
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+}

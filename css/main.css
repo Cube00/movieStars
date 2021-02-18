@@ -437,7 +437,7 @@ nav ul li a {
 
 /*nth 4 child*/
 
-.sec-ft-nw:nth-child(5) .information-hovered {
+.sec-ft-nw:nth-child(4) .information-hovered {
     position: absolute;
     top: 50px;
     right: -50px;
@@ -451,7 +451,7 @@ nav ul li a {
     opacity: 0;
 }
 
-.sec-ft-nw:nth-child(5):hover .information-hovered {
+.sec-ft-nw:nth-child(4):hover .information-hovered {
     position: absolute;
     background-color: #fff;
     height: 350px;
@@ -462,7 +462,7 @@ nav ul li a {
     transition-delay: 0.1s;
 }
 
-.sec-ft-nw:nth-child(5) .lefter {
+.sec-ft-nw:nth-child(4) .lefter {
     position: relative;
     margin-top: 40px;
     margin-left: 30px;
@@ -470,7 +470,7 @@ nav ul li a {
     height: 100%;
 }
 
-.sec-ft-nw:nth-child(5):hover .seemore {
+.sec-ft-nw:nth-child(4):hover .seemore {
     position: absolute;
     padding: 15px 20px;
     bottom: 100px;
@@ -482,7 +482,7 @@ nav ul li a {
     transition: 0.3s;
 }
 
-.sec-ft-nw:nth-child(5):hover .seemore:hover {
+.sec-ft-nw:nth-child(4):hover .seemore:hover {
     background-color: #e63946;
     color: #fff;
 }
@@ -693,8 +693,8 @@ nav ul li a {
     position: relative;
     top: 0;
     display: inline-block;
-    width: 285px;
-    margin-left: 20px;
+    max-width: 23.5%;
+    margin-left: 2%;
     margin-right: -4px;
     font-size: 0;
     transition: 0.3s;
@@ -716,7 +716,7 @@ nav ul li a {
 
 .img-owl-cr {
     position: relative;
-    width: 282px;
+    max-width: 100%;
     height: 420px;
     overflow: hidden;
     border-radius: 10px;
@@ -846,15 +846,19 @@ nav ul li a {
 }
 
 .main-event {
-    width: 700px;
+    width: 60%;
 }
 
 .img-main-event {
     display: flex;
-    width: 700px;
+    width: 100%;
     height: 480px;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.pr-news {
+    width: 40%;
 }
 
 .img-main-event img {
@@ -902,15 +906,15 @@ nav ul li a {
 }
 
 .pr-item {
-    width: 220px;
+    width: 47%;
     position: relative;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 .pr-item-img {
     position: relative;
-    width: 220px;
+    width: 100%;
     height: 250px;
     overflow: hidden;
     border-radius: 10px;
@@ -1054,12 +1058,21 @@ nav ul li a {
         padding: 0 30px;
     }
     .sec-ft-nw {
-        width: 210px;
+        width: 204px;
+    }
+    .news-feature {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .wall-0 {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .sec-ft-nw:hover .information-hovered {
         margin-left: 15px;
     }
-    .sec-ft-nw:nth-child(5) .information-hovered {
+    .sec-ft-nw:nth-child(4) .information-hovered {
         margin-right: 15px;
     }
     .sec-ft-nw:last-child .information-hovered {
@@ -1109,7 +1122,7 @@ nav ul li a {
         padding: 0 30px;
     }
     .sec-ft-nw {
-        width: 188px;
+        width: 180px;
     }
     .img-sec-ft {
         height: 250px;
@@ -1137,11 +1150,11 @@ nav ul li a {
     .sec-ft-nw:hover .information-hovered {
         margin-left: 25px;
     }
-    .sec-ft-nw:nth-child(5):hover .information-hovered {
+    .sec-ft-nw:nth-child(4):hover .information-hovered {
         width: 500px;
         height: 290px;
     }
-    .sec-ft-nw:nth-child(5) .lefter {
+    .sec-ft-nw:nth-child(4) .lefter {
         margin-right: 250px;
     }
     .sec-ft-nw:last-child .lefter {
@@ -1151,7 +1164,7 @@ nav ul li a {
         width: 500px;
         height: 290px;
     }
-    .sec-ft-nw:nth-child(5) .information-hovered {
+    .sec-ft-nw:nth-child(4) .information-hovered {
         margin-right: 25px;
     }
     .sec-ft-nw:last-child .information-hovered {
@@ -1167,15 +1180,9 @@ nav ul li a {
         width: 100%;
         overflow: hidden;
     }
-    .news-owl {
-        width: 245px;
-    }
     .img-owl-cr {
-        width: 245px;
-        height: 350px;
-    }
-    .news-owl:nth-child(4n) {
-        margin-right: 3px;
+        width: 100%;
+        height: 310px;
     }
     .news-owl:hover {
         top: 0px;
@@ -1184,23 +1191,6 @@ nav ul li a {
     .in-theatres {
         width: 100%;
         padding: 0 20px;
-    }
-    .main-event {
-        width: 600px;
-    }
-    .img-main-event {
-        width: 600px;
-        height: 400px;
-    }
-    .pr-news {
-        margin-left: 0px;
-    }
-    .pr-item {
-        width: 195px;
-    }
-    .pr-item-img {
-        width: 200px;
-        height: 220px;
     }
     .ft-it {
         bottom: 15px;
@@ -1236,9 +1226,6 @@ nav ul li a {
         width: 150px;
         height: 220px;
     }
-    .aditional-fr-nw {
-        display: none;
-    }
     .news-feature {
         margin-top: 0px;
         margin-bottom: 60px;
@@ -1254,14 +1241,11 @@ nav ul li a {
         font-size: 13px;
     }
     .sec-ft-nw {
-        width: 152px;
+        margin-bottom: 40px;
         position: relative;
         top: 0;
         transition: 0.3s;
-    }
-    .sec-ft-nw:hover {
-        transition: 0.3s;
-        top: -5px;
+        width: 18.3%;
     }
     .img-sec-ft {
         height: 210px;
@@ -1282,20 +1266,6 @@ nav ul li a {
     .sec-ft-nw .information-hovered {
         display: none;
     }
-    /*news-owl*/
-    .news-owl {
-        width: 198px;
-    }
-    .img-owl-cr {
-        width: 200px;
-        height: 300px;
-    }
-    /* .news-owl:nth-child(4n) {
-        margin-left: 10px;
-    } */
-    .news-owl:nth-child(5n) {
-        margin-right: 0px;
-    }
     .inf-cr-owl h2 {
         font-size: 11pt;
     }
@@ -1315,14 +1285,6 @@ nav ul li a {
     .sl-changer {
         margin-top: 0px;
     }
-    /*main-event*/
-    .main-event {
-        width: 480px;
-    }
-    .img-main-event {
-        width: 480px;
-        height: 300px;
-    }
     .main-event h3 {
         font-size: 13px;
     }
@@ -1332,14 +1294,6 @@ nav ul li a {
     }
     .categories-item-main span {
         font-size: 13px;
-    }
-    /*pr-item*/
-    .pr-item {
-        width: 167px;
-    }
-    .pr-item-img {
-        width: 167px;
-        height: 190px;
     }
     /*footer*/
     .footerlogo {
@@ -1366,6 +1320,21 @@ nav ul li a {
     /*nav*/
     nav ul {
         display: none;
+    }
+    .content-ft {
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+    .content-ft::-webkit-scrollbar {
+        width: 2px;
+    }
+    .content-ft::-webkit-scrollbar-track {
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .content-ft::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #d1d1d1;
     }
 }
 
