@@ -11,6 +11,12 @@ const countDown = () => {
     }
 };
 const increase = (leng) => {
+    const newState = leng / 3 - 1;
+    const newStateFloor = Math.round(newState);
+    if (document.body.offsetWidth <= 500) {
+        console.log("PRAY WITH BEAR ");
+        if (count < newStateFloor) count++;
+    }
     if (count < leng / 4 - 1) {
         count++;
     }
