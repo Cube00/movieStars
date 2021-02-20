@@ -1,0 +1,361 @@
+body {
+    background-color: #f1f1f1;
+}
+
+.full-story {
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 180px;
+}
+
+.info-w-c {
+    position: relative;
+    margin-top: -150px;
+    height: 600px;
+}
+
+.full-cover-photo {
+    overflow: hidden;
+    height: 600px;
+}
+
+.full-cover-photo img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+    width: 105%;
+    margin-left: -24px;
+    min-height: 600px;
+    filter: blur(8px);
+    -webkit-filter: blur(11px);
+}
+
+.full-cover-photo:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #1d3557;
+    opacity: 0.7;
+}
+
+.inf-full-story {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.conentfull {
+    overflow: hidden;
+    position: absolute;
+    top: 250px;
+}
+
+.title-fullstory {
+    font-size: 35px;
+    font-family: "Cabin-Bold";
+    color: #fff;
+}
+
+.full-cateogrie {
+    margin-top: 10px;
+}
+
+.full-cateogrie span {
+    margin: 3px 10px 0 0;
+    font-size: 16px;
+    font-family: "Cabin-regular";
+    color: #ddd;
+}
+
+.watch-web {
+    margin-top: 15px;
+}
+
+.watch-me {
+    margin-right: 10px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-family: "Cabin-Regular";
+    color: #fff;
+    border-radius: 30px;
+    background-color: #ef233c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.play-icon-full {
+    float: right;
+    width: 17px;
+    margin-left: 10px;
+    margin-top: 1px;
+    filter: invert(100%) sepia(81%) saturate(482%) hue-rotate(176deg) brightness(102%) contrast(91%);
+    opacity: 0.7;
+}
+
+.recomended {
+    margin-right: 10px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-family: "Cabin-Regular";
+    color: #fff;
+    border-radius: 30px;
+    background: none;
+    border: 1px solid #ef233c;
+    outline: none;
+    cursor: pointer;
+}
+
+.ps-rt-ft {
+    position: relative;
+    margin-top: -210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-pg-poster {
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.full-pg-poster img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 200px;
+}
+
+.about-mov {
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 240px;
+}
+
+.each-mov-inf {
+    margin: 15px;
+}
+
+.each-mov-inf h2 {
+    margin-bottom: 5px;
+    font-family: "Cabin-Bold";
+    font-size: 15px;
+    color: #c2c2c2;
+}
+
+.each-mov-inf span {
+    font-family: "Cabin-Bold";
+    font-size: 16px;
+    color: #fff;
+}
+
+.rating-mov {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.rating-mov span {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    font-family: "Cabin-Bold";
+    color: #fff;
+}
+
+.information-mv {
+    position: relative;
+    z-index: 1;
+    margin-top: 5px;
+    margin-left: 240px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 15px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.content-mv {
+    padding: 15px;
+    margin-top: 30px;
+    margin-right: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.details h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: "Cabin-Regular";
+    color: #000;
+}
+
+.details span {
+    font-size: 15px;
+    font-family: "Cabin-Regular";
+    color: rgb(87, 87, 87);
+}
+
+.content-mv h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: "Cabin-Regular";
+    color: #000;
+}
+
+.content-mv span {
+    font-size: 15px;
+    font-family: "Cabin-Regular";
+    color: rgb(87, 87, 87);
+}
+
+.actors {
+    margin: 50px 0 0 0;
+}
+
+.actors-inf {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.actor-each {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid#f1f1f1;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.actor-each:hover {
+    background-color: #edf2f4;
+}
+
+.cl-act {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+.actor-image {
+    position: absolute;
+    top: 15%;
+    transform: translateY(-15%);
+    width: 60px;
+}
+
+.actor {
+    margin: 12px;
+    padding: 15px 0px 0;
+    display: flex;
+}
+
+.actor h4 {
+    font-size: 14px;
+    font-family: "Cabin-Bold";
+    color: #bbbbbb;
+    margin-bottom: 4px;
+}
+
+.actor h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: "Cabin-Bold";
+    color: #2b2d42;
+    width: 350px;
+}
+
+.headings-full {
+    margin-bottom: 20px;
+}
+
+.t-actors {
+    margin-bottom: 2px;
+    font-size: 32px;
+    font-family: "Cabin-Bold";
+    color: #1d3557;
+}
+
+.photos-full .t-actors {
+    color: #ef233c;
+}
+
+.t-actors-span {
+    font-family: "Cabin-Regular";
+    font-size: 17px;
+    color: rgb(194, 194, 194);
+    padding-bottom: 10px;
+}
+
+.ph-vd {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.videos-full,
+.photos-full {
+    width: 47%;
+}
+
+.iframe-video {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.posters {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.screenshots {
+    width: 45%;
+    height: 155px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.screenshots:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+.screenshots:nth-child(2) {
+    border-top-right-radius: 10px;
+}
+
+.screenshots:nth-child(3) {
+    border-bottom-left-radius: 10px;
+}
+
+.screenshots:nth-child(4) {
+    border-bottom-right-radius: 10px;
+}
+
+.screenshots img {
+    max-height: 160px;
+}
+
+
+/*footer*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #faf4f4;
+}
