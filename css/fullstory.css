@@ -5,7 +5,7 @@ body {
 .full-story {
     width: 100%;
     min-height: 100vh;
-    margin-bottom: 180px;
+    margin-bottom: 120px;
 }
 
 .info-w-c {
@@ -88,6 +88,10 @@ body {
     cursor: pointer;
 }
 
+.watch-me:hover .play-icon-full {
+    transform: rotate(90deg);
+}
+
 .play-icon-full {
     float: right;
     width: 17px;
@@ -95,6 +99,7 @@ body {
     margin-top: 1px;
     filter: invert(100%) sepia(81%) saturate(482%) hue-rotate(176deg) brightness(102%) contrast(91%);
     opacity: 0.7;
+    transition: 0.4s;
 }
 
 .recomended {
@@ -108,6 +113,11 @@ body {
     border: 1px solid #ef233c;
     outline: none;
     cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.recomended:hover {
+    color: #ef233c;
 }
 
 .ps-rt-ft {
@@ -279,6 +289,28 @@ body {
     width: 350px;
 }
 
+.more-actors {
+    overflow: hidden;
+    height: 0px;
+}
+
+.more-actors-show {
+    height: auto;
+}
+
+.showBtn {
+    margin-top: 10px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-family: "Cabin-Regular";
+    color: #ef233c;
+    border-radius: 30px;
+    background: none;
+    border: 1px solid #ef233c;
+    outline: none;
+    cursor: pointer;
+}
+
 .headings-full {
     margin-bottom: 20px;
 }
@@ -348,6 +380,91 @@ body {
 
 .screenshots img {
     max-height: 160px;
+}
+
+.more-like-this {
+    margin-top: 50px;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.title-more-like h2 {
+    font-size: 35px;
+    font-family: "Cabin-Bold";
+    color: #1d3557;
+}
+
+.each-item-like {
+    display: inline-block;
+    vertical-align: top;
+    width: 235px;
+    margin-right: 1.2%;
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.each-item-like:hover .like-poster img {
+    transform: scale(1.1);
+    transition-delay: 0s;
+}
+
+.like-poster {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.like-poster img {
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+    max-width: 100%;
+}
+
+.inf-like h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: "Cabin-Bold";
+    color: #191919;
+}
+
+.cats-like {
+    display: flex;
+    justify-content: center;
+}
+
+.cats-like span {
+    margin: 3px 7px;
+    font-size: 14px;
+    font-family: "Cabin-Bold";
+    color: rgb(168, 168, 168);
+}
+
+.more-like-items {
+    margin-top: 25px;
+}
+
+.storyline {
+    margin-top: 50px;
+}
+
+.storyline span {
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    font-family: "Cabin-Regular";
+    color: #868686;
+    margin-bottom: 10px;
+    border-bottom: 1px solid#cccccc;
+}
+
+.storyline span h3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #000;
 }
 
 

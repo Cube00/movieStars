@@ -1,36 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="107" height="61" viewBox="0 0 107 61">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #f4f4f4;
-        filter: url(#color-overlay-1);
-      }
-
-      .cls-2, .cls-3 {
-        font-size: 30px;
-      }
-
-      .cls-3, .cls-5 {
-        fill: #faf4f4;
-        text-anchor: middle;
-        font-family: "Cabin-Medium";
-      }
-
-      .cls-4, .cls-5 {
-        font-size: 14px;
-      }
-    </style>
-
-    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
-      <feFlood flood-color="#e42b2b"/>
-      <feComposite operator="in" in2="SourceGraphic"/>
-      <feBlend in2="SourceGraphic" result="solidFill"/>
-    </filter>
-  </defs>
-  <g>
-    <rect x="33" y="-3" width="70" height="33" class="cls-1"/>
-    <text x="54" y="25" class="cls-2"><tspan dy="1.034em" x="54" class="cls-3">MOVIE</tspan></text>
-    <text x="79" y="21" class="cls-4"><tspan x="79" class="cls-5">STAR</tspan></text>
-    <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA8FBMVEUAAAD6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owf6owcAAADzpFxrAAAAT3RSTlMAT+5WCr1iuxB+qaKHAtUvJ9YIXXyQwIPEkX1fDLmJbkNAbYjcOzHaLO9UTDMw8EtENsoOCQujBhJQnp1XdY94qnqhdFHGp8dspFW8rqxZa10ZKgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAACZSURBVAjXTYzpEoEAFIUPIrJniShryFayRsi+e//HkTsNnT/f+ebcuQDF5w/AEyYYYsMej3CIxv4aTySRSvPU+Uw2lxecki0UxVIZkiBXqrTU6g1BQlPx/Gm10VG7P+2pfWAw1FzV1dEXijEmnRg6cTpjiHNuQTSX7v3KIqw3wNYWAXlHvj8cT7Z1vljXG/n98TQdaC/2DXwAg9gOwYD1eb8AAAAASUVORK5CYII=" x="42" y="8" width="15" height="15"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="827.5" height="567" viewBox="0 0 827.5 567">
+  <g id="logo" transform="translate(-139 3)">
+    <text id="Movie" transform="translate(139 63)" fill="#fff" font-size="37" font-family="Cabin-Bold, Cabin" font-weight="700"><tspan x="0" y="0">Movie</tspan></text>
+    <path id="Path_1" data-name="Path 1" d="M0,0H67.378V29.879H0Z" transform="translate(163.622)" fill="#e42b2b"/>
+    <text id="STAR" transform="translate(194 20)" fill="#fff" font-size="14" font-family="Cabin-Bold, Cabin" font-weight="700"><tspan x="0" y="0">STAR</tspan></text>
+    <g id="star-2" data-name="star" transform="translate(399.5 -3)">
+      <path id="Path_2" data-name="Path 2" d="M0,0H567V567H0Z" fill="none"/>
+      <path id="Path_3" data-name="Path 3" d="M0,0H567V567H0Z" fill="none"/>
+      <path id="Path_4" data-name="Path 4" d="M53.571,56.9l3.906,2.358-1.037-4.444,3.451-2.99-4.545-.386L53.571,47.25l-1.776,4.191-4.545.386,3.451,2.99L49.665,59.26Z" transform="translate(-272 -36.25)" fill="none" stroke="#f58a0e" stroke-width="1"/>
+    </g>
   </g>
 </svg>
