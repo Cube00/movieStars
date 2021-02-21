@@ -294,6 +294,13 @@
         border-radius: 10px;
         background-color: #d1d1d1;
     }
+    /*fullstory*/
+    .inf-full-story {
+        padding: 0 20px;
+    }
+    .iframe-video {
+        height: 313px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -323,7 +330,8 @@
         height: 80px;
     }
     .logo img {
-        width: 70px;
+        width: 100px;
+        margin-left: 30px;
     }
     .ps-tp-it img {
         min-width: 100px;
@@ -403,10 +411,10 @@
         padding-bottom: 20px;
     }
     .sign-in {
-        font-size: 8px;
+        font-size: 11px;
     }
     .sign-up {
-        font-size: 8px;
+        font-size: 11px;
     }
     .login {
         margin-top: 12px;
@@ -420,6 +428,81 @@
     .wall-0 {
         padding-top: 12px;
     }
+    .actor-each {
+        display: -webkit-inline-box;
+        width: 100%;
+    }
+    .film {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
+    }
+    .film h3,
+    .film h4 {
+        display: flex;
+        justify-content: center;
+    }
+    .actor h3 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 863px) {
+    .actor h3 {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .full-cover-photo {
+        height: 400px;
+    }
+    .full-cover-photo img {
+        min-height: 400px;
+    }
+    .full-cover-photo:after {
+        height: 400px;
+    }
+    .full-pg-poster {
+        width: 170px;
+        height: 250px;
+    }
+    .full-pg-poster img {
+        max-width: 170px;
+    }
+    .conentfull {
+        top: 220px;
+        left: 220px;
+    }
+    .title-fullstory {
+        font-size: 19px;
+    }
+    .full-cateogrie span {
+        font-size: 14px;
+    }
+    .about-mov {
+        left: 190px;
+    }
+    .rating-mov {
+        margin-top: 25px;
+        margin-right: 0px;
+    }
+    .info-w-c {
+        height: 400px;
+    }
+    .information-mv {
+        margin-left: 190px;
+    }
+    .t-actors {
+        font-size: 18px;
+    }
+    .t-actors-span {
+        font-size: 15px;
+    }
+    .actor h3 {
+        width: 250px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -432,11 +515,11 @@
         left: 20px;
     }
     .sign-in {
-        font-size: 7px;
+        font-size: 9px;
         padding: 5px 15px;
     }
     .sign-up {
-        font-size: 7px;
+        font-size: 9px;
         margin: 5px 15px;
     }
     .btn-rate-sl {
@@ -445,7 +528,8 @@
         font-size: 7px;
     }
     .logo img {
-        width: 50px;
+        width: 80px;
+        margin-left: 40px;
     }
     .cover-fr-nw-it {
         height: 180px;
@@ -622,6 +706,35 @@
     .title-section-featured {
         margin-top: 30px;
     }
+    /*fullstory*/
+    .rating-mov {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+    .actor h3 {
+        font-size: 15px;
+    }
+    .actor-each {
+        display: -webkit-inline-box;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .film {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
+    }
+    .film h3,
+    .film h4 {
+        display: flex;
+        justify-content: center;
+    }
+    .actor h3 {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+    }
 }
 
 @media screen and (max-width: 627px) {
@@ -639,6 +752,45 @@
     .second-type-item {
         width: 100%;
         margin-left: 0px;
+    }
+    .ps-rt-ft {
+        margin-top: -210px;
+    }
+    .full-pg-poster {
+        width: 140px;
+        height: 200px;
+    }
+    .conentfull {
+        left: 180px;
+    }
+    .about-mov {
+        left: 150px;
+    }
+    .each-mov-inf h2 {
+        font-size: 11px;
+    }
+    .each-mov-inf span {
+        font-size: 13px;
+    }
+    .rating-mov span {
+        font-size: 22px;
+    }
+    .details {
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .information-mv {
+        margin-left: 0px;
+    }
+    .iframe-video {
+        height: 200px;
+    }
+    .screenshots {
+        height: 97px;
+    }
+    .screenshots img {
+        max-height: 110px;
     }
 }
 
@@ -672,6 +824,15 @@
     }
     .img-owl-cr img {
         max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .title-fullstory {
+        width: 200px;
+    }
+    .about-mov {
+        margin-top: 13px;
     }
 }
 
@@ -713,5 +874,102 @@
     }
     .news-owl:nth-child(5n) {
         margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .resp-watch {
+        margin-top: 5px;
+        display: block;
+        float: left;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: red;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+    }
+    .resp-watch img {
+        margin-left: 0px;
+    }
+    .watch-me {
+        display: none;
+    }
+    .recomended {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .about-mov {
+        left: 0px;
+    }
+    .rating-mov {
+        margin-top: 33px;
+    }
+    .full-pg-poster {
+        width: 100px;
+        height: 150px;
+    }
+    .full-pg-poster img {
+        max-width: 100px;
+    }
+    .about-mov {
+        margin-top: 15px;
+    }
+    .conentfull {
+        left: 130px;
+    }
+    .rating-stars-full {
+        display: none;
+    }
+    .screenshots {
+        width: 42%;
+        height: 83px;
+    }
+    .screenshots img {
+        width: 160px;
+    }
+    .iframe-video {
+        height: 170px;
+    }
+    .title-fullstory {
+        font-size: 14px;
+    }
+    .conentfull {
+        width: 170px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .sign-up {
+        display: none;
+    }
+    .logo img {
+        margin-left: 0px;
+    }
+    .rating-mov span {
+        font-size: 14px;
+        color: rgb(255, 136, 0);
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .full-cover-photo img {
+        margin-left: -5px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .conentfull {
+        width: 140px;
+        overflow: hidden;
+    }
+    .recomended {
+        font-size: 9px;
+        padding: 9px 14px;
+        margin-right: 0px;
+        margin-top: 5px;
     }
 }

@@ -342,6 +342,7 @@
 
 .iframe-video {
     border-radius: 10px;
+    height: 313px;
     overflow: hidden;
 }
 
