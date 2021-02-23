@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - MovieStar.com - movie ratings, news, Revievs and Where to watch Best movies </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/movies.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-responsive">
+            <img src="images/menu.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="images/logo.png" alt="image">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">HOME</a>
+                </li>
+                <li>
+                    <a href="/movies.html">MOVIES</a>
+                </li>
+                <li>
+                    <a href="">TV SHOWS</a>
+                </li>
+                <li>
+                    <a href="">AWARDS & EVENTS</a>
+                </li>
+                <li>
+                    <a href="">CELEBS</a>
+                </li>
+                <li>
+                    <a href="">COMUNITY</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="second-nav">
+            <div class="search"></div>
+            <div class="login">
+                <div class="sign-up">Sign up</div>
+                <div class="sign-in">Sign in</div>
+            </div>
+        </div>
+    </header>
+    <section class="heading-category">
+        <div class="content-categories">
+            <div class="title-category">
+                <span>(Category)</span> MOVIES
+            </div>
+            <div class="filter">
+                <div class="filter-types">
+                    <div class="catfiltertitle" id="catfilter1">Category <img src="images/arrow.svg" alt=""></div>
+                </div>
+                <div class="categories-drop" id="catfilter1">
+                    <ul>
+                        <li>
+                            <a href="">active</a>
+                        </li>
+                        <li>
+                            <a href="">adventure</a>
+                        </li>
+                        <li>
+                            <a href="">comedy</a>
+                        </li>
+                        <li>
+                            <a href="">crime</a>
+                        </li>
+
+                        <li>
+                            <a href="">drama</a>
+                        </li>
+                        <li>
+                            <a href="">fantasy</a>
+                        </li>
+                        <li>
+                            <a href="">horror</a>
+                        </li>
+                        <li>
+                            <a href="">mystery</a>
+                        </li>
+                        <li>
+                            <a href="">philosophical</a>
+                        </li>
+                        <li>
+                            <a href="">western</a>
+                        </li>
+
+                        <li>
+                            <a href="">thriller</a>
+                        </li>
+                        <li>
+                            <a href="">romance</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-types">
+                    <div class="catfiltertitle" id="catfilter2">Country <img src="images/arrow.svg" alt=""></div>
+                </div>
+                <div class="categories-drop" id="catfilter2">
+                    <ul>
+                        <li>
+                            <a href="">usa</a>
+                        </li>
+                        <li>
+                            <a href="">englend</a>
+                        </li>
+
+                        <li>
+                            <a href="">canada</a>
+                        </li>
+                        <li>
+                            <a href="">italy</a>
+                        </li>
+                        <li>
+                            <a href="">japan</a>
+                        </li>
+                        <li>
+                            <a href="">germany</a>
+                        </li>
+                        <li>
+                            <a href="">spain</a>
+                        </li>
+                        <li>
+                            <a href="">russia</a>
+                        </li>
+                        <li>
+                            <a href="">australia</a>
+                        </li>
+                        <li>
+                            <a href="">sweden</a>
+                        </li>
+                        <li>
+                            <a href="">belgium</a>
+                        </li>
+                        <li>
+                            <a href="">south korea</a>
+                        </li>
+                        <li>
+                            <a href="">mexico</a>
+                        </li>
+                        <li>
+                            <a href="">china</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-types">
+                    <div class="catfiltertitle" id="catfilter3">Date <img src="images/arrow.svg" alt=""></div>
+                </div>
+                <div class="categories-drop" id="catfilter3">
+                    <div class="change-data">
+                        <p>From: </p>
+                        <input type="text" name="from" placeholder="E.g. 1975" id="from" autocomplete="none">
+                    </div>
+                    <div class="change-data">
+                        <p>To: </p>
+                        <input type="text" name="to" placeholder="E.g. 2021" id="to">
+                    </div>
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+                    <p>Rating: <span id="value"></span><img src="images/star.svg" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var range = document.getElementById("myRange");
+        var output = document.getElementById("value");
+        output.innerHTML = range.value;
+
+        range.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script>
+    <script>
+        const type = document.querySelectorAll('.catfiltertitle');
+        const drop = document.querySelectorAll('.categories-drop');
+        type.forEach((e) => {
+            e.addEventListener('click', () => {
+                drop.forEach((j) => {
+                    if (e.id === j.id) {
+                        j.classList.toggle('show-drop');
+                    } else {
+                        j.classList.remove('show-drop');
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

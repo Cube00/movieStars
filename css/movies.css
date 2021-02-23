@@ -1,0 +1,185 @@
+.heading-category {
+    overflow: hidden;
+    margin-top: -100px;
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/background-movie.png");
+    object-fit: cover;
+}
+
+.content-categories {
+    width: 1100px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.title-category {
+    font-size: 35px;
+    font-family: "Cabin-bold";
+    color: rgb(204, 204, 204);
+}
+
+.title-category span {
+    font-size: 25px;
+    color: #e63946;
+}
+
+.filter {
+    display: flex;
+}
+
+.filter-types {
+    margin: 20px 40px 20px 0;
+}
+
+.catfiltertitle {
+    padding: 20px 20px 20px 30px;
+    font-size: 20px;
+    background-color: #1d1d1d;
+    font-family: "Cabin-Regular";
+    color: rgb(185, 185, 185);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.colorchange {
+    color: red;
+}
+
+.catfiltertitle img {
+    float: right;
+    margin: 1px 9px;
+    width: 20px;
+    transform: rotate(90deg);
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(3deg) brightness(104%) contrast(101%);
+}
+
+.categories-drop {
+    display: none;
+}
+
+.categories-drop {
+    width: 600px;
+    padding: 10px;
+    background: #fff;
+    position: absolute;
+    z-index: 3;
+    margin-top: 95px;
+    border-radius: 10px;
+    border: 1px solid#ececec;
+}
+
+.categories-drop ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categories-drop ul li a {
+    display: block;
+    margin-right: 9px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    font-family: "Cabin-Regular";
+    color: rgb(63, 63, 63);
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.categories-drop ul li a:hover {
+    background-color: #e63946;
+    color: #f1f1f1;
+}
+
+.change-data {
+    display: inline-block;
+    margin: 20px;
+}
+
+.change-data p {
+    float: left;
+    font-family: "Cabin-Bold";
+    margin-top: 18px;
+}
+
+.change-data input {
+    padding: 20px 10px;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.change-data input::placeholder {
+    font-family: "Cabin-Bold";
+}
+
+.show-drop {
+    display: block;
+}
+
+.slidecontainer {
+    width: 40%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    margin-bottom: 15px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ffba08;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #faa307;
+    cursor: pointer;
+}
+
+#value {
+    margin: 10px;
+    font-size: 19px;
+    font-family: "Cabin-Bold";
+    color: #faa307;
+}
+
+.slidecontainer p {
+    margin: 10px;
+    font-size: 19px;
+    font-family: "Cabin-Bold";
+    color: #faa307;
+}
+
+.slidecontainer p img {
+    position: absolute;
+    bottom: 8px;
+    filter: invert(52%) sepia(79%) saturate(1632%) hue-rotate(4deg) brightness(103%) contrast(95%);
+}
+
+.slidecontainer {
+    float: right;
+    margin: 30px;
+    position: relative;
+}

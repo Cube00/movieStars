@@ -56,6 +56,11 @@ nav ul li a {
     font-size: 15px;
     font-family: "Cabin-Regular";
     color: #bababa;
+    transition-duration: 0.4s;
+}
+
+nav ul li a:hover {
+    color: #e63946;
 }
 
 .login {
@@ -1064,10 +1069,13 @@ nav ul li a {
     font-family: "Cabin-bold";
 }
 
+
+/*fullstory*/
+
 .full-story {
     width: 100%;
     min-height: 100vh;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
 }
 
 .info-w-c {
@@ -1532,6 +1540,10 @@ nav ul li a {
 
 .resp-watch {
     display: none;
+}
+
+.full-img-owl {
+    height: 350px;
 }
 
 
