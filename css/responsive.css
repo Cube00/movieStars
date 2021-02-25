@@ -236,6 +236,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .sec-ft-nw:hover {
+        z-index: 1;
+    }
     .logo {
         margin: 0 auto;
     }

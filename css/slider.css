@@ -270,7 +270,7 @@
     position: relative;
     display: flex;
     font-weight: bold;
-    z-index: 2;
+    z-index: 1;
 }
 
 .rating span small {
@@ -291,7 +291,7 @@
     left: var(--bar-size);
     background: var(--background-color);
     border-radius: inherit;
-    z-index: 1;
+    z-index: 0;
 }
 
 
