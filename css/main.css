@@ -44,6 +44,10 @@ header {
     width: 67%;
 } */
 
+.close-x {
+    display: none;
+}
+
 nav ul {
     display: flex;
 }
@@ -997,7 +1001,8 @@ nav ul li a:hover {
 /*footer*/
 
 .footerWrap {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
     padding-top: 70px;
 }
