@@ -3,7 +3,7 @@
         padding: 0 20px;
     }
     .featured-today {
-        padding: 0 30px;
+        padding: 0 15px;
     }
     .sec-ft-nw {
         width: 204px;
@@ -35,21 +35,21 @@
     .wall-news {
         padding: 70px 15px;
     }
-    .news {
-        margin-right: 60px;
-    }
-    .news .news-hover {
-        left: -10px;
-    }
-    .news:nth-child(5n) .news-hover {
-        right: -10px;
-    }
-    .news:nth-child(5n-1) .news-hover {
-        right: -10px;
+}
+
+@media screen and (max-width: 1195px) {
+    .content-ft {
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
     }
 }
 
 @media screen and (max-width: 1136px) {
+    .lists {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     header {
         padding: 0 20px;
     }
@@ -85,12 +85,15 @@
     }
     /*ft*/
     .featured-today {
-        padding: 0 30px;
+        padding: 0 15px;
     }
     .sec-ft-nw {
         width: 180px;
     }
     .img-sec-ft {
+        height: 250px;
+    }
+    .img-sec-ft img {
         height: 250px;
     }
     .rat-sec-ft {
@@ -139,7 +142,7 @@
     /*top-pics*/
     .top-pics {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 5px;
     }
     .sl-carousel {
         width: 1045px;
@@ -148,10 +151,10 @@
     }
     .img-owl-cr {
         width: 100%;
-        height: 390px;
+        height: 290px;
     }
     .img-owl-cr img {
-        min-width: 270px;
+        height: 290px;
     }
     .news-owl:hover {
         top: 0px;
@@ -159,7 +162,7 @@
     /*theaters*/
     .in-theatres {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 5px;
     }
     .ft-it {
         bottom: 15px;
@@ -290,10 +293,10 @@
         width: 18.3%;
     }
     .img-sec-ft {
-        height: 210px;
+        height: 230px;
     }
     .img-sec-ft img {
-        max-width: 210px;
+        height: 230px;
     }
     .rat-sec-ft {
         top: 180px;
@@ -310,7 +313,6 @@
     }
     .inf-cr-owl h2 {
         font-size: 14pt;
-        max-width: 190px;
         text-overflow: ellipsis;
     }
     .cat-owl span {
@@ -319,12 +321,6 @@
     .rating-owl {
         bottom: 40px;
         font-size: 9pt;
-    }
-    .owl-s h2 {
-        font-size: 21px;
-    }
-    .owl-s span {
-        font-size: 17px;
     }
     .sl-changer {
         margin-top: 0px;
@@ -371,32 +367,39 @@
         overflow: hidden;
         opacity: 0;
     }
-    .active-nav ul {
+    .active-nav {
+        display: block;
         position: fixed;
+        overflow: hidden;
+        background-color: rgba(32, 32, 32, 0.5);
+        height: 100%;
+        width: 0%;
+        left: 0;
+        transition: 0.4s;
+    }
+    .on {
+        width: 100%;
+    }
+    .active-nav ul {
         flex-direction: column;
-        width: 450px;
+        width: 350px;
         height: 100%;
         left: 0;
         overflow: hidden;
-        background-color: #fff;
+        overflow-y: auto;
+        background-color: rgb(214, 23, 23);
         opacity: 1;
-        z-index: 9999;
         box-shadow: 0px 0 15px -2px rgb(26, 26, 26);
         transition: width 0.4s;
-    }
-    .close-x {
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        cursor: pointer;
-    }
-    .active-nav ul li {
-        margin: 18px;
+        padding-top: 30px;
     }
     .active-nav ul li a {
-        font-size: 12px;
-        color: #010101;
+        display: block;
+        padding: 20px;
+        font-size: 15px;
+        color: rgb(212, 212, 212);
+        font-family: "Cabin-Regular";
+        border-bottom: 1px solid rgb(192, 24, 24);
     }
     .content-ft {
         white-space: nowrap;
@@ -435,6 +438,9 @@
 }
 
 @media screen and (max-width: 991px) {
+    .booking {
+        display: none;
+    }
     .news .news-hover {
         display: none;
     }
@@ -510,14 +516,20 @@
         margin-bottom: 0px;
     }
     .img-sec-ft {
-        height: 190px;
+        height: 200px;
+    }
+    .img-sec-ft img {
+        height: 200px;
     }
     .rat-sec-ft {
-        top: 160px;
+        top: 165px;
     }
     .img-owl-cr {
         width: 100%;
-        height: 340px;
+        height: 250px;
+    }
+    .img-owl-cr img {
+        height: 250px;
     }
     .img-main-event {
         height: 300px;
@@ -603,10 +615,10 @@
         margin-top: -105px;
     }
     .img-owl-cr img {
-        min-width: 210px;
+        height: 290px;
     }
     .img-owl-cr {
-        height: 300px;
+        height: 290px;
     }
     .actor h3 {
         width: 250px;
@@ -704,7 +716,6 @@
         width: 250px;
     }
     .inf-cr-owl h2 {
-        max-width: 130px;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -807,7 +818,6 @@
         margin-bottom: 15px;
     }
     .inf-cr-owl h2 {
-        width: 65px;
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 14px;
@@ -820,10 +830,10 @@
         bottom: 32px;
     }
     .owl-s h2 {
-        font-size: 13px;
+        font-size: 19px;
     }
     .owl-s span {
-        font-size: 11px;
+        font-size: 14px;
     }
     .prew {
         width: 35px;
@@ -952,10 +962,16 @@
     .img-owl-cr {
         height: 240px;
     }
+    .img-owl-cr img {
+        height: 240px;
+    }
 }
 
 @media screen and (max-width: 705px) {
     .img-owl-cr {
+        height: 220px;
+    }
+    .img-owl-cr img {
         height: 220px;
     }
     .flow-flex {
@@ -1108,6 +1124,9 @@
     .img-owl-cr {
         height: 250px;
     }
+    .img-owl-cr img {
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -1124,6 +1143,16 @@
     .img-main-event img {
         width: 100%;
     }
+    .pr-item-img {
+        height: 180px;
+    }
+    .pr-item-img img {
+        position: absolute;
+        left: 0;
+        transform: none;
+        max-width: 220px;
+        height: 180px;
+    }
     .pr-news {
         margin-left: -5px;
         flex-wrap: nowrap;
@@ -1139,7 +1168,7 @@
         height: 250px;
     }
     .img-owl-cr img {
-        min-width: 180px;
+        height: 250px;
     }
     .content-mv {
         margin-right: 10px;
@@ -1156,6 +1185,26 @@
     .img-owl-cr {
         height: 220px;
     }
+    .img-owl-cr img {
+        height: 220px;
+    }
+    .ph-vd {
+        display: block;
+    }
+    .videos-full,
+    .photos-full {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .screenshots {
+        height: 110px;
+    }
+    .screenshots img {
+        max-height: 190px;
+    }
+    .screenshots {
+        width: 47%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1163,10 +1212,10 @@
         width: 0%;
     }
     .pr-item-img {
-        height: 100px;
+        height: 150px;
     }
     .pr-item-img img {
-        max-width: 100px;
+        height: 150px;
     }
     .img-owl-cr {
         height: 190px;
@@ -1186,10 +1235,10 @@
         right: 5px;
     }
     .img-owl-cr img {
-        max-width: 150px;
+        height: 190px;
     }
     .img-sec-ft img {
-        max-width: 150px;
+        height: 150px;
     }
 }
 
@@ -1213,9 +1262,6 @@
     }
     .recomended {
         font-size: 11px;
-    }
-    .img-owl-cr img {
-        min-width: 140px;
     }
 }
 
@@ -1245,22 +1291,21 @@
     .rating-stars-full {
         display: none;
     }
-    .screenshots {
-        width: 42%;
-        height: 83px;
-    }
-    .screenshots img {
-        width: 160px;
-    }
-    .iframe-video {
-        height: 170px;
-    }
     .title-fullstory {
         font-size: 14px;
     }
     .conentfull {
         width: 170px;
         overflow: hidden;
+    }
+    .screenshots {
+        width: 47%;
+    }
+    .pr-item-img {
+        height: 130px;
+    }
+    .pr-item-img img {
+        height: 130px;
     }
 }
 
@@ -1305,7 +1350,13 @@
         height: 150px;
     }
     .img-owl-cr img {
-        min-width: 100px;
+        height: 150px;
+    }
+    .pr-item-img {
+        height: 120px;
+    }
+    .pr-item-img img {
+        height: 120px;
     }
 }
 
@@ -1313,17 +1364,14 @@
     .full-cover-photo img {
         margin-left: -5px;
     }
-    .iframe-video {
-        height: 100px;
-    }
-    .screenshots {
-        height: 47.5px;
-    }
     .screenshots img {
-        width: 90px;
+        max-height: 140px;
     }
-    .img-owl-cr img {
-        min-width: 140px;
+    .pr-item-img {
+        height: 110px;
+    }
+    .pr-item-img img {
+        height: 110px;
     }
 }
 
@@ -1333,5 +1381,14 @@
     }
     .img-owl-cr {
         height: 200px;
+    }
+    .img-owl-cr img {
+        height: 200px;
+    }
+    .screenshots {
+        width: 46%;
+    }
+    .screenshots img {
+        max-height: 120px;
     }
 }

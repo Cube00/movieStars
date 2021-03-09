@@ -44,6 +44,11 @@ header {
     width: 67%;
 } */
 
+.active-nav {
+    display: none;
+    overflow: hidden;
+}
+
 .close-x {
     display: none;
 }
@@ -68,11 +73,117 @@ nav ul li a:hover {
 }
 
 .login {
+    position: relative;
     display: flex;
     margin: 26px 0px;
 }
 
-.sign-in {
+.profile {
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #010101;
+    border: 1px;
+}
+
+.profile img {
+    width: 35px;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.profile:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.profile-options {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 190px;
+    margin-top: 45px;
+    right: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-options ul li {
+    border-bottom: 1px solid#f1f1f1;
+}
+
+.profile-options ul li a {
+    display: block;
+    padding: 20px;
+    color: #a7a7a7;
+    font-family: "Cabin-Regular";
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.profile-options ul li:last-child {
+    border-bottom: 0px;
+}
+
+.profile-options ul li a:hover {
+    background-color: #f1f1f1;
+    color: #010101;
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 10px;
+    background-color: rgb(194, 34, 34);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.prof span {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Cabin-Bold";
+    margin: 10px;
+}
+
+.pr {
+    float: left;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.pr img {
+    width: 52px;
+}
+
+.active-profile {
+    display: block;
+}
+
+.prof-st {
+    overflow: hidden;
+    margin: 0 10px;
+    padding-bottom: 20px;
+}
+
+.prof-st li {
+    float: left;
+}
+
+.prof-st li a {
+    padding: 3px;
+    font-size: 16px;
+    font-family: "Cabin-Bold";
+    color: rgb(85, 10, 10) !important;
+    border-bottom: none;
+}
+
+
+/* .sign-in {
     padding: 10px 25px;
     background-color: #e63946;
     font-size: 11.4pt;
@@ -86,7 +197,7 @@ nav ul li a:hover {
     font-size: 11.4pt;
     font-family: "Cabin-Regular";
     color: #fff;
-}
+} */
 
 
 /*news-feature*/
@@ -123,6 +234,41 @@ nav ul li a:hover {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: 0.7s;
+}
+
+.first-news-item:hover .cover-fr-nw-it img {
+    opacity: 0.8;
+}
+
+.showmore {
+    position: absolute;
+    width: 0px;
+    overflow: hidden;
+    padding: 15px;
+    top: 230px;
+    right: 0px;
+    background-color: #e63946;
+    color: #e63946;
+    font-size: 17px;
+    font-family: "Cabin-Bold";
+    text-align: center;
+    opacity: 0;
+    white-space: nowrap;
+    transition: 0.7s;
+}
+
+.first-news-item:hover .showmore {
+    width: 150px;
+    padding: 15px;
+    opacity: 1;
+    color: #fff;
+}
+
+.showmore img {
+    float: left;
+    margin-top: -1px;
+    filter: invert(100%) sepia(81%) saturate(216%) hue-rotate(325deg) brightness(119%) contrast(106%);
 }
 
 .inf-fr-nw {
@@ -482,10 +628,8 @@ nav ul li a:hover {
 }
 
 .img-sec-ft img {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    max-width: 250px;
+    width: 100%;
+    height: 320px;
 }
 
 .rat-sec-ft {
@@ -624,7 +768,7 @@ nav ul li a:hover {
 .img-owl-cr {
     position: relative;
     max-width: 100%;
-    height: 420px;
+    height: 340px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -632,7 +776,7 @@ nav ul li a:hover {
 .img-owl-cr img {
     position: relative;
     width: 100%;
-    min-width: 290px;
+    height: 340px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -653,6 +797,7 @@ nav ul li a:hover {
     bottom: 20px;
     left: 15px;
     z-index: 1;
+    width: 85%;
 }
 
 .rating-owl {
@@ -760,7 +905,7 @@ nav ul li a:hover {
 .content-theaters {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .main-event {
@@ -773,6 +918,40 @@ nav ul li a:hover {
     height: 480px;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.5s;
+}
+
+.main-booking {
+    position: absolute;
+    width: 0px;
+    margin-left: -10px;
+    margin-top: -70px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 15px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.m-booked {
+    padding: 15px 25px;
+    background-color: #e63946;
+    font-size: 16px;
+    font-family: "Cabin-Bold";
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 6px;
+}
+
+.main-event:hover .main-booking {
+    width: 150px;
+    opacity: 1;
+}
+
+.main-event:hover .img-main-event {
+    opacity: 0.8;
 }
 
 .pr-news {
@@ -780,6 +959,7 @@ nav ul li a:hover {
 }
 
 .img-main-event img {
+    width: 100%;
     max-width: 1000px;
 }
 
@@ -854,6 +1034,36 @@ nav ul li a:hover {
     opacity: 0.2;
 }
 
+.booking {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+}
+
+.pr-item:hover .booking {
+    transition: 0.4s;
+    top: 0;
+    height: 250px;
+    background-color: #e63946;
+    border-radius: 10px;
+}
+
+.booked {
+    padding: 10px 15px;
+    background: none;
+    font-family: "Cabin-Bold";
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    outline: none;
+}
+
 .ft-it {
     position: absolute;
     bottom: 25px;
@@ -887,6 +1097,64 @@ nav ul li a:hover {
 
 .pr-item-cats span {
     margin-right: 5px;
+}
+
+
+/*lists*/
+
+.lists {
+    background-color: #e7e7e7;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.list-title h2 {
+    font-size: 32px;
+    font-family: "Cabin-Bold";
+}
+
+.list-title span {
+    font-size: 20px;
+    font-family: "Cabin-Regular";
+    color: #888888;
+}
+
+.list {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.each-list {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+.each-list img {
+    width: 100%;
+}
+
+.each-list h2 {
+    padding: 15px 15px 0px 15px;
+    font-size: 18px;
+    font-family: "Cabin-Regular";
+}
+
+.author {
+    display: block;
+    padding: 15px 15px 0px 15px;
+    font-size: 15px;
+    font-family: "Cabin-Regular";
+    color: #acacac;
+}
+
+.total {
+    display: block;
+    padding: 5px 15px 20px 15px;
+    font-size: 15px;
+    font-family: "Cabin-Regular";
+    color: #1f1f1f;
 }
 
 
@@ -1440,7 +1708,11 @@ nav ul li a:hover {
 }
 
 .full-img-owl {
-    height: 350px;
+    height: 300px;
+}
+
+.full-img-owl img {
+    height: 300px;
 }
 
 
@@ -1455,4 +1727,19 @@ footer {
 
 .arrow-control {
     display: none;
+}
+
+
+/*loader*/
+
+.loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    z-index: 999;
 }
