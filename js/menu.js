@@ -18,7 +18,7 @@ profile.addEventListener("click", () => {
     if (window.innerWidth > 1024) {
         opts.classList.toggle("active-profile");
     }
-    if (window.innerWidth < 1024) {
+    if (window.innerWidth <= 1024) {
         menu.classList.add("on");
         console.log("rame");
     }

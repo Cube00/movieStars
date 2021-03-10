@@ -135,7 +135,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     margin: 0 10px 10px;
-    background-color: rgb(194, 34, 34);
+    background-color: #d62828;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -845,15 +845,15 @@ nav ul li a:hover {
 
 .next,
 .prew,
-.next-x,
-.prew-x {
+.nextx,
+.prewx {
     display: inline-block;
     vertical-align: top;
     outline: none;
 }
 
 .next,
-.next-x {
+.nextx {
     position: relative;
     width: 40px;
     height: 40px;
@@ -865,15 +865,19 @@ nav ul li a:hover {
 }
 
 .prew,
-.prew-x {
+.prewx {
     position: relative;
     width: 40px;
     height: 40px;
     padding: 10px;
     border-radius: 50%;
-    background-color: #e0e8eb;
+    background-color: #2b2d42;
     cursor: pointer;
     outline: none;
+}
+
+.swiper-button-disabled {
+    background-color: #e0e8eb;
 }
 
 .arrow-x {

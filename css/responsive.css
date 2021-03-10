@@ -387,7 +387,7 @@
         left: 0;
         overflow: hidden;
         overflow-y: auto;
-        background-color: rgb(214, 23, 23);
+        background-color: #e63946;
         opacity: 1;
         box-shadow: 0px 0 15px -2px rgb(26, 26, 26);
         transition: width 0.4s;
@@ -397,9 +397,18 @@
         display: block;
         padding: 20px;
         font-size: 15px;
-        color: rgb(212, 212, 212);
+        color: #6e1c1c;
         font-family: "Cabin-Regular";
-        border-bottom: 1px solid rgb(192, 24, 24);
+        border-bottom: 1px solid#D62828;
+    }
+    .prof-st li a {
+        display: block;
+        padding: 10px !important;
+        margin: 2px;
+        font-size: 14px;
+        color: rgb(243, 243, 243) !important;
+        font-family: "Cabin-Regular";
+        background-color: #d62828;
     }
     .content-ft {
         white-space: nowrap;
@@ -476,7 +485,6 @@
     }
     .logo img {
         width: 100px;
-        margin-left: 30px;
     }
     .ps-tp-it img {
         min-width: 100px;
@@ -1043,14 +1051,15 @@
     .categories-drop {
         position: absolute;
         width: 100%;
-        margin-top: 10px;
+        margin-top: -11px;
     }
     .login {
         margin-top: 15px;
     }
     .menu-responsive img {
         margin: 1px;
-        width: 25px;
+        width: 33px;
+        margin-top: 5px;
     }
     .news-feature {
         flex-direction: column;

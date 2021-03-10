@@ -41,8 +41,8 @@ var top = new Swiper(".mv-tv", {
     loop: false,
     autoplay: 0,
     navigation: {
-        nextEl: ".next-x",
-        prevEl: ".prew-x",
+        nextEl: ".nextx",
+        prevEl: ".prewx",
     },
     effect: "slide",
     spaceBetween: 20,
